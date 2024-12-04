@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffccd5;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #ff8ba7;
+    margin-bottom: 20px;
+}
+
+.content {
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #ff8ba7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7096;
+}
+
+#loginForm {
+    text-align: center;
+    padding: 20px;
+}
+
+#loginForm input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: fadeInOut 2s ease-in-out;
+}
+
+.empty-message {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.copyBtn {
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.share-links {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.share-links p {
+    margin: 10px 0;
+}
+
+.share-links button {
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.content-text {
+    flex: 1;
+    margin-right: 15px;
+    word-break: break-all;
+}
+
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+h1, h2, nav, .empty-message {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.edit-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.edit-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.edit-area {
+    margin: 15px 0;
+}
+
+.edit-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.content-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.no-copy {
+    color: #666;
+    font-style: italic;
+}
+
+.copyable {
+    color: #000;
+}
+
+.edit-info {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.edit-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.copy-label.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.copy-label.disabled input {
+    cursor: not-allowed;
+}
+
+.link-icon {
+    margin-right: 5px;
+    color: #0066cc;
+}
+
+.no-copy {
+    color: #333;
+}
+
+.copyable {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.content-text {
+    display: flex;
+    align-items: center;
+} 

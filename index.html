@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小希好物分享</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>小希好物分享</h1>
+        <nav>
+            <ul>
+                <li><a href="#clothes">衣服</a></li>
+                <li><a href="#cosmetics">化妆品</a></li>
+                <li><a href="#food">美食</a></li>
+            </ul>
+        </nav>
+        <div id="shareLinks" class="share-links hidden">
+            <p>访问者链接：<span id="visitorLink"></span> <button onclick="copyLink('visitor')">复制链接</button></p>
+            <p>管理员链接：<span id="adminLink"></span> <button onclick="copyLink('admin')">复制链接</button></p>
+        </div>
+        <button id="loginBtn" onclick="showLoginForm()">管理员登录</button>
+    </header>
+
+    <div id="loginForm" class="hidden">
+        <input type="password" id="adminPassword" placeholder="请输入管理员密码">
+        <button onclick="login()">登录</button>
+    </div>
+
+    <main>
+        <section id="clothes">
+            <h2>衣服推荐</h2>
+            <div class="content" id="clothesContent">
+                <!-- 内容将通过JavaScript动态添加 -->
+            </div>
+        </section>
+
+        <section id="cosmetics">
+            <h2>化妆品推荐</h2>
+            <div class="content" id="cosmeticsContent">
+                <!-- 内容将通过JavaScript动态添加 -->
+            </div>
+        </section>
+
+        <section id="food">
+            <h2>美食推荐</h2>
+            <div class="content" id="foodContent">
+                <!-- 内容将通过JavaScript动态添加 -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
